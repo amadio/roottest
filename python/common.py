@@ -6,8 +6,12 @@
 __all__ = [ 'pylong', 'maxvalue', 'MyTestCase', 'run_pytest', 'FIXCLING', 'check_cppyy_backend' ]
 
 import os, sys, unittest, warnings
-import pytest
 
+try:
+   import pytest, pytest_cov
+except ImportError as error:
+   print(error)
+   sys.exit(1)
 
 if sys.hexversion >= 0x3000000:
    pylong = int
