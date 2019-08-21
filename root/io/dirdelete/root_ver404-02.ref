@@ -1,4 +1,3 @@
-
 Processing rundirdelete.C...
 Error in <TDirectory::cd>: Unknown directory dir_2_newname
 After rename

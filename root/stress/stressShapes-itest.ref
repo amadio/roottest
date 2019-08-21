@@ -1,4 +1,3 @@
-
 Processing test/stressShapes.cxx...
 Info in <TGeoManager::TGeoManager>: Geometry stressShapes, arbitrary shapes created
 Info in <TGeoManager::SetTopVolume>: Top volume is TOP. Master volume is TOP

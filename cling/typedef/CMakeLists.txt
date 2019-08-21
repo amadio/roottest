@@ -9,7 +9,6 @@ ROOTTEST_ADD_TEST(runptrptr
 ROOTTEST_ADD_TEST(testclass
                   MACRO -e "gSystem->Load(\"testclass_h\")"
                   OUTREF typedefAndScope.ref
-                  OUTCNVCMD grep -v \(int\)\ 0
                   DEPENDS testclass.h
                   LABELS roottest regression cling)
 
