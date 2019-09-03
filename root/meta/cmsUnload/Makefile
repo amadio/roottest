@@ -51,6 +51,7 @@ $(ALL_ROOTMAP_CASES) : %: %.success
 ALL_CASES_LOG = $(addsuffix .log,$(ALL_CASES))
 ALL_ROOTMAP_CASES_LOG = $(addsuffix .log,$(ALL_ROOTMAP_CASES))
 
+EXTRA_DIFFOPTS = --ignore-blank-lines
 $(addsuffix .success,$(ALL_CASES) $(ALL_ROOTMAP_CASES)) : %.success: %.log %.ref
 	$(SuccessTestDiff) && touch $@
 
